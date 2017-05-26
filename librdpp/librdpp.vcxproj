@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{198A82F8-2469-45A9-A63D-7FB55F18A181}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>librdpp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir);$(SolutionDir);D:\DEV\include;D:\DEV\include\openssl\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <TargetName>librdppd</TargetName>
+    <LibraryPath>D:\DEV\bin;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir);$(SolutionDir);D:\DEV\include;D:\DEV\include\openssl\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <TargetName>librdpp</TargetName>
+    <LibraryPath>D:\DEV\bin;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="core\bitmap.cpp" />
+    <ClCompile Include="core\crypto.cpp" />
+    <ClCompile Include="core\log.cpp" />
+    <ClCompile Include="core\rss.cpp" />
+    <ClCompile Include="core\buffer.cpp" />
+    <ClCompile Include="core\timestamp.cpp" />
+    <ClCompile Include="core\unicode\utf.cpp" />
+    <ClCompile Include="rdp\lic.cpp" />
+    <ClCompile Include="rdp\nla\cssp.cpp" />
+    <ClCompile Include="rdp\nla\ntlm.cpp" />
+    <ClCompile Include="rdp\pdu\data.cpp" />
+    <ClCompile Include="rdp\pdu\layer.cpp" />
+    <ClCompile Include="rdp\rdp.cpp" />
+    <ClCompile Include="rdp\sec.cpp" />
+    <ClCompile Include="rdp\t125\certificate.cpp" />
+    <ClCompile Include="rdp\t125\gcc.cpp" />
+    <ClCompile Include="rdp\t125\mcs.cpp" />
+    <ClCompile Include="rdp\tpkt.cpp" />
+    <ClCompile Include="rdp\x224.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\ber.h" />
+    <ClInclude Include="core\bitmap.h" />
+    <ClInclude Include="core\config.h" />
+    <ClInclude Include="core\crypto.h" />
+    <ClInclude Include="core\layer.h" />
+    <ClInclude Include="core\log.h" />
+    <ClInclude Include="core\per.h" />
+    <ClInclude Include="core\poppack.h" />
+    <ClInclude Include="core\pshpack1.h" />
+    <ClInclude Include="core\rss.h" />
+    <ClInclude Include="core\scancode.h" />
+    <ClInclude Include="core\buffer.h" />
+    <ClInclude Include="core\string_util.h" />
+    <ClInclude Include="core\timestamp.h" />
+    <ClInclude Include="core\unicode\unicode_data.h" />
+    <ClInclude Include="core\unicode\utf.h" />
+    <ClInclude Include="rdp\lic.h" />
+    <ClInclude Include="rdp\nla\cssp.h" />
+    <ClInclude Include="rdp\nla\ntlm.h" />
+    <ClInclude Include="rdp\nla\sspi.h" />
+    <ClInclude Include="rdp\pdu\caps.h" />
+    <ClInclude Include="rdp\pdu\data.h" />
+    <ClInclude Include="rdp\pdu\layer.h" />
+    <ClInclude Include="rdp\pdu\order.h" />
+    <ClInclude Include="rdp\rdp.h" />
+    <ClInclude Include="rdp\sec.h" />
+    <ClInclude Include="rdp\t125\certificate.h" />
+    <ClInclude Include="rdp\t125\gcc.h" />
+    <ClInclude Include="rdp\t125\mcs.h" />
+    <ClInclude Include="rdp\tpkt.h" />
+    <ClInclude Include="rdp\x224.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,7 @@
+# git ignore file
+bin/*
+ipch
+librdpp.orig
+Debug/
+Release/
+reference/

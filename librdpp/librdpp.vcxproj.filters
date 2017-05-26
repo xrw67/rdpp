@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{ac665d30-1176-468a-9cb6-b083565fcb85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rdp">
+      <UniqueIdentifier>{ada4abba-85c9-4c47-b3be-eacd29b2e53d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rdp\pdu">
+      <UniqueIdentifier>{08b1ecc1-550c-4149-b2b4-e68c44d826f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rdp\t125">
+      <UniqueIdentifier>{e17842ea-a559-41ea-a53e-4e89564c962a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rdp\nla">
+      <UniqueIdentifier>{1ce73404-838a-441f-8c2b-1cd1245e709d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\unicode">
+      <UniqueIdentifier>{84879d55-8c5d-40da-8b42-1579852857f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\crypto.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\log.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rss.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="rdp\lic.cpp">
+      <Filter>rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="rdp\rdp.cpp">
+      <Filter>rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="rdp\sec.cpp">
+      <Filter>rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="rdp\tpkt.cpp">
+      <Filter>rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="rdp\x224.cpp">
+      <Filter>rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="rdp\t125\mcs.cpp">
+      <Filter>rdp\t125</Filter>
+    </ClCompile>
+    <ClCompile Include="rdp\t125\gcc.cpp">
+      <Filter>rdp\t125</Filter>
+    </ClCompile>
+    <ClCompile Include="rdp\pdu\data.cpp">
+      <Filter>rdp\pdu</Filter>
+    </ClCompile>
+    <ClCompile Include="rdp\pdu\layer.cpp">
+      <Filter>rdp\pdu</Filter>
+    </ClCompile>
+    <ClCompile Include="rdp\t125\certificate.cpp">
+      <Filter>rdp\t125</Filter>
+    </ClCompile>
+    <ClCompile Include="core\buffer.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\timestamp.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="rdp\nla\cssp.cpp">
+      <Filter>rdp\nla</Filter>
+    </ClCompile>
+    <ClCompile Include="rdp\nla\ntlm.cpp">
+      <Filter>rdp\nla</Filter>
+    </ClCompile>
+    <ClCompile Include="core\unicode\utf.cpp">
+      <Filter>core\unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="core\bitmap.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\crypto.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\layer.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\log.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\per.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rss.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\scancode.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\timestamp.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\ber.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\config.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\lic.h">
+      <Filter>rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\rdp.h">
+      <Filter>rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\sec.h">
+      <Filter>rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\tpkt.h">
+      <Filter>rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\x224.h">
+      <Filter>rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\t125\gcc.h">
+      <Filter>rdp\t125</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\t125\mcs.h">
+      <Filter>rdp\t125</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\pdu\caps.h">
+      <Filter>rdp\pdu</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\pdu\data.h">
+      <Filter>rdp\pdu</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\pdu\layer.h">
+      <Filter>rdp\pdu</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\pdu\order.h">
+      <Filter>rdp\pdu</Filter>
+    </ClInclude>
+    <ClInclude Include="core\string_util.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\t125\certificate.h">
+      <Filter>rdp\t125</Filter>
+    </ClInclude>
+    <ClInclude Include="core\buffer.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\nla\cssp.h">
+      <Filter>rdp\nla</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\nla\ntlm.h">
+      <Filter>rdp\nla</Filter>
+    </ClInclude>
+    <ClInclude Include="rdp\nla\sspi.h">
+      <Filter>rdp\nla</Filter>
+    </ClInclude>
+    <ClInclude Include="core\unicode\unicode_data.h">
+      <Filter>core\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="core\unicode\utf.h">
+      <Filter>core\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="core\bitmap.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\poppack.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\pshpack1.h">
+      <Filter>core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
